@@ -1,0 +1,17 @@
+{
+   "sender": {
+        "impl" : "units.redis_sender.RedisSender",
+        "config" :{
+            "host": "localhost",
+            "port": 6379,
+            "source": "data",
+            "target": "queue_set"
+        }
+    },
+    "sindbad_gate": {
+        "impl": "units.sindbad_gate.SindbadGate"
+    },
+    "inc": {
+        "impl": "units.examples.inca"
+    }
+}
