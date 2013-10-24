@@ -23,8 +23,6 @@ Require `quick-ng-repeat.js` to your project and use this syntax in your templat
 In quick-ng-repeat directive everething is done to make is really fast. So we store a special callback with name of this attribute. 
 [This is a full answer](https://github.com/allaud/quick-ng-repeat/issues/1)
 
-https://github.com/allaud/quick-ng-repeat/issues/1
-
 ## Compared to usual ngRepeat
 
 * Compare `example/index.html` (uses quickNgRepeat) and `example/index_classic.html` (uses classic NgRepeat)
