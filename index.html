@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Quick-ng-repeat by allaud</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/allaud/quick-ng-repeat">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Quick-ng-repeat</h1>
+            <h2>A much more quicker replacement for AngularJS ng-repeat directive</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/allaud/quick-ng-repeat/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/allaud/quick-ng-repeat/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="angularjs-directive-for-much-more-quicker-lists-rendering" class="anchor" href="#angularjs-directive-for-much-more-quicker-lists-rendering"><span class="octicon octicon-link"></span></a>AngularJS directive for much more quicker lists rendering</h1>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Shallow list watch (ngRepeat uses deep watch)</li>
+<li>Animations support</li>
+<li>Special service to cause list render outside of digest cycle</li>
+<li>Smooth scrolling even on heavy compited lists  (check example)</li>
+<li>About 200% performance boost</li>
+<li>Still hesitating? Try to scroll <a href="http://allaud.github.io/quick-ng-repeat/example/index_classic.html">page with ng-repeat list</a> and a <a href="http://allaud.github.io/quick-ng-repeat/example/index.html">page with quick-ng-repeat</a>
+</li>
+</ul><h2>
+<a name="usage-example" class="anchor" href="#usage-example"><span class="octicon octicon-link"></span></a>Usage example:</h2>
+
+<p>Require <code>quick-ng-repeat.js</code> to your project and use this syntax in your templates:</p>
+
+<pre><code>&lt;ul&gt;
+  &lt;li quick-ng-repeat="item in list" quick-repeat-list="items"&gt;
+    {{ item.name }}
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h2>
+<a name="why-we-need-the-quick-repeat-list-attribute" class="anchor" href="#why-we-need-the-quick-repeat-list-attribute"><span class="octicon octicon-link"></span></a>Why we need the 'quick-repeat-list' attribute?</h2>
+
+<p>In quick-ng-repeat directive everything is done to make is really fast. So we store a special callback with name of this attribute. 
+<a href="https://github.com/allaud/quick-ng-repeat/issues/1">This is a full answer</a></p>
+
+<h2>
+<a name="compared-to-usual-ngrepeat" class="anchor" href="#compared-to-usual-ngrepeat"><span class="octicon octicon-link"></span></a>Compared to usual ngRepeat</h2>
+
+<ul>
+<li>Compare <code>example/index.html</code> (uses quickNgRepeat) and <code>example/index_classic.html</code> (uses classic NgRepeat)</li>
+</ul><h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<p>Directive live example in ./example</p>
+
+<p>Try out the demo (try to scroll):
+<a href="http://allaud.github.io/quick-ng-repeat/example/index_classic.html">page with ng-repeat list</a> and 
+<a href="http://allaud.github.io/quick-ng-repeat/example/index.html">page with quick-ng-repeat</a></p>
+
+<h2>
+<a name="to-run-example" class="anchor" href="#to-run-example"><span class="octicon octicon-link"></span></a>To run example</h2>
+
+<pre><code>cd example &amp;&amp; python -m SimpleHTTPServer
+</code></pre>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/allaud">allaud</a> can be found on <a href="https://github.com/allaud/quick-ng-repeat">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
