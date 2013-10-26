@@ -20,7 +20,7 @@ Require `quick-ng-repeat.js` to your project and use this syntax in your templat
     
 ## Why we need the 'quick-repeat-list' attribute?
 
-In quick-ng-repeat directive everething is done to make is really fast. So we store a special callback with name of this attribute. 
+In quick-ng-repeat directive everything is done to make is really fast. So we store a special callback with name of this attribute. 
 [This is a full answer](https://github.com/allaud/quick-ng-repeat/issues/1)
 
 ## Compared to usual ngRepeat
