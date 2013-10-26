@@ -7,6 +7,7 @@
 * Special service to cause list render outside of digest cycle
 * Smooth scrolling even on heavy compited lists  (check example)
 * About 200% performance boost
+* Still hesitating? Try to scroll [page with ng-repeat list](http://allaud.github.io/quick-ng-repeat/example/index_classic.html) and a [page with quick-ng-repeat](http://allaud.github.io/quick-ng-repeat/example/index.html)
 
 ## Usage example:
 
@@ -30,6 +31,10 @@ In quick-ng-repeat directive everything is done to make is really fast. So we st
 ## Example
 
 Directive live example in ./example
+
+Try out the demo (try to scroll):
+[page with ng-repeat list](http://allaud.github.io/quick-ng-repeat/example/index_classic.html) and 
+[page with quick-ng-repeat](http://allaud.github.io/quick-ng-repeat/example/index.html)
 
 ## To run example
     cd example && python -m SimpleHTTPServer
