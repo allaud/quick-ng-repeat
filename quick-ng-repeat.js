@@ -10,7 +10,7 @@ angular.module('QuickList').directive('quickNgRepeat',
   var list_id = window.list_id = (function(){
     var i = 0;
     return function(){
-      return 'list_' + i;
+      return 'list_' + (++i);
     };
   }());
 
