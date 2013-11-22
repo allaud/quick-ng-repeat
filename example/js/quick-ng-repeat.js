@@ -7,6 +7,12 @@ angular.module('QuickList').directive('quickNgRepeat',
   var NG_REMOVED = '$$NG_REMOVED';
   var ngRepeatMinErr = 'err';
   var uid = ['0', '0', '0'];
+  var list_id = (function(){
+    var i = 0;
+    return function(){
+      return 'list_' + (++i);
+    };
+  }());
 
   function hashKey(obj) {
     var objType = typeof obj,
@@ -122,8 +128,10 @@ angular.module('QuickList').directive('quickNgRepeat',
         //   - index: position
         var lastBlockMap = {};
 
+        var list_name = $attr.quickRepeatList || list_id();
+
         //watch props
-        $scope.$watch(rhs, quick_repeat_list[$attr.quickRepeatList] = function(collection){
+        $scope.$watch(rhs, quick_repeat_list[list_name] = function(collection){
           var index, length,
               previousNode = $element[0],     // current position of the node
               nextNode,
