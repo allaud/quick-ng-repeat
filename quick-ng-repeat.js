@@ -3,7 +3,7 @@ angular.module('QuickList', []);
 angular.module('QuickList').value('quickRepeatList', {});
 
 angular.module('QuickList').directive('quickNgRepeat',
-['$parse', '$animate', 'quickRepeatList', function($parse, $animate, quick_repeat_list) {
+['$parse', '$animate', '$rootScope', 'quickRepeatList', function($parse, $animate, $rootScope, quick_repeat_list) {
   var NG_REMOVED = '$$NG_REMOVED';
   var ngRepeatMinErr = 'err';
   var uid = ['0', '0', '0'];
@@ -247,7 +247,7 @@ angular.module('QuickList').directive('quickNgRepeat',
                 nextBlockMap[block.id] = block;
               });
 
-              if (childScope.$$phase !== '$digest'){
+              if ($rootScope.$$phase !== '$digest' && childScope.$$phase !== '$digest'){
                 childScope.$digest();
               }
             }
