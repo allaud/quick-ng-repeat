@@ -2,7 +2,7 @@ angular.module('ListExample', ['QuickList']);
 
 angular.module('ListExample').controller('CoreController',
 
-function($scope, quickRepeatList){
+function($scope){
 
 
   var factorial = function (num){
@@ -50,7 +50,6 @@ function($scope, quickRepeatList){
 
     $scope.list = LONG_LIST.slice(0, 30 + new_to_load);
 
-    //_.defer(quickRepeatList.items, $scope.list);
     $scope.$digest();
   }), 50);
 
