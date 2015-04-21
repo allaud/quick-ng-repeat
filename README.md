@@ -19,6 +19,23 @@ Require `quick-ng-repeat.js` to your project and use this syntax in your templat
       </li>
     </ul>
     
+## Installation
+
+###### Using bower package manager:
+
+```
+bower i quick-ngrepeat --save
+```
+_Note the single hyphen in the package name_
+
+
+###### Using the browser:
+
+```html
+<script src="quick-ng-repeat.js"></script>
+```
+
+
 ## Why we need the 'quick-repeat-list' attribute?
 
 In quick-ng-repeat directive everything is done to make is really fast. So we store a special callback with name of this attribute. 
